@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/github-hero.svg" alt="Voice Typing AI for Windows — voice typing, translation, notes, and real-time conversations" width="100%">
+  <img src="assets/github-hero.svg?v=0.4.83-en" alt="Voice Typing AI for Windows — voice typing, translation, notes, and real-time conversations" width="100%">
 </p>
 
 <h1 align="center">Voice Typing AI for Windows</h1>
@@ -199,7 +199,7 @@ Offline tests check local logic. They do not replace testing every microphone, B
 ## Android app
 
 <a href="https://play.google.com/store/apps/details?id=com.silkytypingai.app">
-  <img src="assets/android-card.svg" alt="Voice Typing AI - Talk to Text — view the separate Android app on Google Play" width="100%">
+  <img src="assets/android-card.svg?v=0.4.83-en" alt="Voice Typing AI - Talk to Text — view the separate Android app on Google Play" width="100%">
 </a>
 
 For your phone, see the separate **Voice Typing AI - Talk to Text** app:
