@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+  <title id="title">Voice Typing AI Android — 在 Google Play 获取</title>
+  <desc id="desc">把语音输入带到手机上。Android 为独立版本，功能与服务以 Google Play 页面为准。</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d282a"/><stop offset="1" stop-color="#0b1728"/></linearGradient></defs>
+  <rect x="1" y="1" width="1198" height="218" rx="20" fill="url(#bg)" stroke="#2c4e52"/>
+  <g font-family="Segoe UI,Microsoft YaHei,PingFang SC,Noto Sans CJK SC,sans-serif">
+    <text x="43" y="44" font-size="12" fill="#74dabb" letter-spacing="2">ALSO ON ANDROID</text>
+    <text x="42" y="92" font-size="31" font-weight="650" fill="#eef9f5">把语音输入带到手机上。</text>
+    <text x="43" y="126" font-size="16" fill="#adcbc6">Voice Typing AI · Talk to Text</text>
+    <text x="43" y="178" font-size="13" fill="#769b99">独立 Android 版本 · 功能与服务以商店页面为准</text>
+    <rect x="783" y="76" width="265" height="62" rx="12" fill="#c7f4df"/>
+    <path d="M806 93v28l23-14z" fill="#17483e"/>
+    <text x="849" y="113" font-size="18" font-weight="600" fill="#14382f">在 Google Play 获取</text>
+    <rect x="1092" y="41" width="68" height="138" rx="15" fill="#102b31" stroke="#537977" stroke-width="2"/>
+    <path d="M1115 52h22" stroke="#537977" stroke-width="4" stroke-linecap="round"/>
+    <g stroke="#80d9ba" stroke-width="3" stroke-linecap="round"><path d="M1110 104v12M1118 91v37M1126 82v54M1134 95v28M1142 105v9"/></g>
+    <path d="M1117 166h18" stroke="#537977" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
