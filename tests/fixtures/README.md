@@ -1,7 +1,7 @@
-# Windows 输入协议测试夹具
+# Windows Input Protocol Test Fixtures
 
-`android829-input.json` 是 Windows 离线回归测试使用的协议基线，保存提示词、工具结构及来源版本的校验信息，不包含 Android 应用源码、用户录音或 API Key。
+`android829-input.json` is the protocol baseline used by the Windows offline regression tests. It contains prompts, tool schemas, and verification metadata for the source version. It does not contain Android application source code, user recordings, or API keys.
 
-虽然文件名保留了基线的来源名称，但本目录属于 Windows 项目的测试。`DesktopRiskTests.cs` 会读取它，检查普通输入与翻译输入的协议是否发生非预期变化。
+Although the filename retains the name of the baseline's origin, this directory belongs to the Windows project's tests. `DesktopRiskTests.cs` reads the fixture to detect unintended changes to the voice typing and translation input protocols.
 
-请勿在此目录添加真实用户输入、私人日志或凭据。需要真实音频的供应商测试应使用调用者在仓库之外自行提供的非敏感文件。
+Do not add real user input, private logs, or credentials to this directory. Provider tests that require audio should use a non-sensitive file supplied by the person running the test and kept outside the repository.
