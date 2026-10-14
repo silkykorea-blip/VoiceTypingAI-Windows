@@ -1,0 +1,96 @@
+# Build and packaging outputs
+bin/
+dist/
+release-*/
+installer/payload/
+tests/bin/
+
+# Runtime data and diagnostics
+backup/
+diagnostics/
+generated-audio/
+processed-audio/
+tmp/
+
+# Benchmark outputs and generated fixtures
+benchmark/bin/
+benchmark/output/
+benchmark/**/output/
+benchmark/**/audio/
+benchmark/**/results/
+
+# Local logs and editor state
+*.log
+*.log.*
+*.bak
+*.bak.*
+*.user
+.vs/
+
+# Local recordings: provider smoke tests require caller-supplied speech audio.
+tests/smoke-audio/
+*.wav
+*.pcm
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.flac
+
+# Local environment, provider credentials, and signing/private keys.
+.env
+.env.*
+*.local.json
+*.local.ini
+credentials.json
+credentials.*.json
+secrets.json
+secrets.*.json
+service-account*.json
+service_account*.json
+*-firebase-adminsdk-*.json
+.git-credentials
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+# Application settings and private note/conversation state copied from AppData.
+settings.ini
+settings.ini.*
+widgets.json
+widgets.json.*
+realtime-conversations.json
+realtime-conversations.json.*
+schedules.json
+schedules.json.*
+widget-layout.ini
+widget-layout.ini.*
+
+# Only placeholder examples/samples belong in source control; never real values.
+!.env.example
+!.env.sample
+!.env.*.example
+!.env.*.sample
+!credentials.example.json
+!credentials.sample.json
+!secrets.example.json
+!secrets.sample.json
+!service-account.example.json
+!service-account.sample.json
+!service_account.example.json
+!service_account.sample.json
+!settings.ini.example
+!settings.ini.sample
+!widgets.json.example
+!widgets.json.sample
+!realtime-conversations.json.example
+!realtime-conversations.json.sample
+!schedules.json.example
+!schedules.json.sample
+!widget-layout.ini.example
+!widget-layout.ini.sample
