@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
   <title id="title">Voice Typing AI for Windows</title>
-  <desc id="desc">让表达跟上思考。Windows 0.4.83，Gemini 与 OpenAI，自备 API Key。右侧为语音转文字功能示意。</desc>
+  <desc id="desc">Speak your mind. Keep your flow. Windows 0.4.83 with Gemini or OpenAI and your own API key. Voice-to-text concept preview.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101c30"/><stop offset="1" stop-color="#07121d"/></linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#76efd0"/><stop offset="1" stop-color="#8ecfff"/></linearGradient>
@@ -16,13 +16,13 @@
     <text x="103" y="67" font-size="17" font-weight="600" fill="#d9e7ee" letter-spacing="1.2">VOICE TYPING AI</text>
     <rect x="282" y="47" width="99" height="27" rx="13.5" fill="#172b3d" stroke="#294555"/>
     <text x="332" y="65.5" text-anchor="middle" font-size="12" fill="#a2d8d7" letter-spacing="1.5">WINDOWS</text>
-    <text x="54" y="159" font-size="53" font-weight="700" fill="#f2f7fb">让表达，</text>
-    <text x="54" y="226" font-size="53" font-weight="700" fill="url(#accent)">跟上思考。</text>
-    <text x="56" y="270" font-size="19" fill="#abbacb">按下快捷键，说出想法，让文字自然落下。</text>
-    <text x="56" y="306" font-size="14" fill="#7c92a8" letter-spacing=".4">语音输入 · 翻译输入 · 记事簿 · 实时语音聊天</text>
+    <text x="54" y="159" font-size="53" font-weight="700" fill="#f2f7fb">Speak your mind.</text>
+    <text x="54" y="226" font-size="53" font-weight="700" fill="url(#accent)">Keep your flow.</text>
+    <text x="56" y="270" font-size="19" fill="#abbacb">Press a shortcut. Speak. See your words appear.</text>
+    <text x="56" y="306" font-size="14" fill="#7c92a8" letter-spacing=".4">Voice typing · Translation · Notes · Live chat</text>
     <g font-size="12" font-weight="600">
       <rect x="55" y="361" width="143" height="34" rx="8" fill="#183333" stroke="#2b5551"/><text x="126.5" y="383" text-anchor="middle" fill="#a0efda">Gemini / OpenAI</text>
-      <rect x="208" y="361" width="128" height="34" rx="8" fill="#152737" stroke="#294354"/><text x="272" y="383" text-anchor="middle" fill="#c2d8e7">自备 API Key</text>
+      <rect x="208" y="361" width="128" height="34" rx="8" fill="#152737" stroke="#294354"/><text x="272" y="383" text-anchor="middle" fill="#c2d8e7">Your own API key</text>
       <rect x="346" y="361" width="120" height="34" rx="8" fill="#152737" stroke="#294354"/><text x="406" y="383" text-anchor="middle" fill="#c2d8e7">Windows x64</text>
       <rect x="476" y="361" width="87" height="34" rx="8" fill="#152737" stroke="#294354"/><text x="519.5" y="383" text-anchor="middle" fill="#c2d8e7">v0.4.83</text>
     </g>
@@ -32,7 +32,7 @@
       <path d="M0 53H490" stroke="#213544"/>
       <circle cx="24" cy="27" r="4" fill="#63ddbd"/><circle cx="39" cy="27" r="4" fill="#2d4d5c"/><circle cx="54" cy="27" r="4" fill="#2d4d5c"/>
       <text x="78" y="32" font-size="12" fill="#a9bdca">VOICE → TEXT</text>
-      <text x="463" y="32" font-size="10" fill="#6b8599" text-anchor="end">功能示意</text>
+      <text x="463" y="32" font-size="10" fill="#6b8599" text-anchor="end">CONCEPT PREVIEW</text>
       <rect x="24" y="76" width="442" height="75" rx="14" fill="#102831" stroke="#21414a"/>
       <circle cx="54" cy="113.5" r="16" fill="#1a4547"/>
       <g stroke="#83e6cd" stroke-width="2" stroke-linecap="round" fill="none"><rect x="51" y="104" width="6" height="12" rx="3"/><path d="M47 112v2a7 7 0 0 0 14 0v-2M54 121v3"/></g>
@@ -42,10 +42,10 @@
       <text x="437" y="118" text-anchor="end" font-size="12" fill="#8caeb9">00:08</text>
       <path d="M244 159v18m-5-5 5 5 5-5" fill="none" stroke="#416273" stroke-width="1.5"/>
       <rect x="24" y="185" width="442" height="79" rx="12" fill="#15202f" stroke="#263849"/>
-      <text x="42" y="208" font-size="10" fill="#7795a9" letter-spacing="1">AI 整理后的文字</text>
-      <text x="42" y="238" font-size="17" fill="#dce9f2">把灵感说出来，剩下的交给文字。</text>
+      <text x="42" y="208" font-size="10" fill="#7795a9" letter-spacing="1">YOUR WORDS, READY TO USE</text>
+      <text x="42" y="238" font-size="17" fill="#dce9f2">Speak an idea. Let the words flow.</text>
       <rect x="349" y="223" width="2" height="20" rx="1" fill="#8ce6ce"/>
     </g>
-    <text x="977" y="411" font-size="12" text-anchor="middle" fill="#6d91a2">说话 → AI 整理 → 输入到当前窗口</text>
+    <text x="977" y="411" font-size="12" text-anchor="middle" fill="#6d91a2">Speak → Process → Type into your app</text>
   </g>
 </svg>
