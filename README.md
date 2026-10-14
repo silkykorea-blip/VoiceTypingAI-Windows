@@ -1,224 +1,216 @@
 <p align="center">
-  <img src="assets/github-hero.svg" alt="Voice Typing AI for Windows — 语音输入、翻译、记事与实时对话" width="100%">
+  <img src="assets/github-hero.svg" alt="Voice Typing AI for Windows — voice typing, translation, notes, and real-time conversations" width="100%">
 </p>
 
 <h1 align="center">Voice Typing AI for Windows</h1>
 
-<p align="center"><strong>用快捷键开始说话，把想法写进当前输入框。</strong></p>
-<p align="center">Windows x64 · 0.4.83 · Gemini / OpenAI · 自备 API Key</p>
+<p align="center"><strong>Press a shortcut, speak your thoughts, and put them into the text field.</strong></p>
+<p align="center">Windows x64 · 0.4.83 · Gemini / OpenAI · Bring Your Own API Key</p>
 
 <p align="center">
-  <a href="https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/tag/v0.4.83"><strong>下载 Windows 版</strong></a>
-  &nbsp;·&nbsp; <a href="#开始使用">开始使用</a>
-  &nbsp;·&nbsp; <a href="#默认快捷键">快捷键</a>
-  &nbsp;·&nbsp; <a href="#隐私与本地数据">隐私说明</a>
-  &nbsp;·&nbsp; <a href="#android-版本">Android 版</a>
+  <a href="https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/tag/v0.4.83"><strong>Download for Windows</strong></a>
+  &nbsp;·&nbsp; <a href="#getting-started">Getting started</a>
+  &nbsp;·&nbsp; <a href="#default-shortcuts">Shortcuts</a>
+  &nbsp;·&nbsp; <a href="#privacy-and-local-data">Privacy</a>
+  &nbsp;·&nbsp; <a href="#android-app">Android app</a>
 </p>
 
 ---
 
-Voice Typing AI 是一个 Windows 桌面语音工具：在输入框中听写、把口述内容翻译成目标语言、记录笔记，也可以打开独立窗口进行有语音回复的实时对话。通过全局快捷键启动，减少在应用之间切换。
+Voice Typing AI is a Windows desktop tool for dictation, translation, voice notes, and real-time conversations with spoken replies. Global shortcuts let you start speaking while working in another application.
 
-**Windows 版采用 BYOK（Bring Your Own Key）：需要自行填写 Gemini 或 OpenAI API Key。** 仓库及发行包不内置开发者的密钥，也不提供随软件附送的云端额度。识别与对话需要联网；费用、额度、模型权限和服务可用性由所选供应商决定。
+**The Windows app uses BYOK (Bring Your Own Key): you must supply your own Gemini or OpenAI API key.** The repository and release packages do not include the developer's credentials or cloud credits. Speech recognition and conversations require an internet connection. Pricing, quotas, model access, and service availability depend on your chosen provider.
 
-## 下载与安装
+## Download and install
 
-当前公开版本：**0.4.83**。从 [GitHub Release](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/tag/v0.4.83) 下载，选择一种运行方式即可。
+Current release: **0.4.83**. Download from the [GitHub release page](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/tag/v0.4.83) and choose either the installer or the portable executable.
 
-| 版本 | 下载 | 适用方式 |
+| Package | Download | How it works |
 | --- | --- | --- |
-| 安装版 | [VoiceTypingAI-v0.4.83-setup.exe](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/download/v0.4.83/VoiceTypingAI-v0.4.83-setup.exe) | 安装到当前用户目录，创建桌面与开始菜单快捷方式 |
-| 便携版 | [VoiceTypingAI-v0.4.83-portable.exe](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/download/v0.4.83/VoiceTypingAI-v0.4.83-portable.exe) | 保存到可写目录，直接运行 EXE |
-| 文件校验 | [SHA256SUMS.txt](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/download/v0.4.83/SHA256SUMS.txt) | 核对下载文件的 SHA-256 |
+| Installer | [VoiceTypingAI-v0.4.83-setup.exe](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/download/v0.4.83/VoiceTypingAI-v0.4.83-setup.exe) | Installs for the current Windows user and creates desktop and Start menu shortcuts |
+| Portable | [VoiceTypingAI-v0.4.83-portable.exe](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/download/v0.4.83/VoiceTypingAI-v0.4.83-portable.exe) | Save it in a writable folder and run the EXE directly |
+| Checksums | [SHA256SUMS.txt](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/download/v0.4.83/SHA256SUMS.txt) | Verify the SHA-256 hash of your download |
 
-运行环境为 **Windows x64、.NET Framework 4.x、可用麦克风和网络连接**。本项目当前构建使用 Windows 自带的 .NET Framework 编译器；如系统缺少运行环境，可参考 [Microsoft .NET Framework 安装说明](https://learn.microsoft.com/dotnet/framework/install/)。
+You need **Windows x64, .NET Framework 4.x, a working microphone, and an internet connection**. The project builds with the Windows .NET Framework compiler. If the runtime is missing, see [Microsoft's .NET Framework installation guide](https://learn.microsoft.com/dotnet/framework/install/).
 
-安装版的程序位置是 `%LOCALAPPDATA%\VoiceTypingAI`。便携版可以直接运行，但设置、历史记录等仍会写入 Windows 用户数据目录；它并非把所有数据都保存在 EXE 旁边。
+The installer places the application in `%LOCALAPPDATA%\VoiceTypingAI`. The portable executable still writes settings and history to Windows user-data folders; it does **not** keep all of its data beside the EXE.
 
 <details>
-<summary>如何核对下载文件</summary>
+<summary>Verify a download</summary>
 
-在下载目录打开 PowerShell，执行：
+Open PowerShell in your download folder and run the command for the package you downloaded:
 
 ```powershell
 Get-FileHash .\VoiceTypingAI-v0.4.83-setup.exe -Algorithm SHA256
 Get-FileHash .\VoiceTypingAI-v0.4.83-portable.exe -Algorithm SHA256
 ```
 
-将结果与同一 Release 中的 `SHA256SUMS.txt` 对照。只需校验自己下载的版本。
+Compare the result with `SHA256SUMS.txt` from the same release.
 
 </details>
 
-## 可以做什么
+## Features
 
-| 功能 | 使用方式 |
+| Feature | What you can do |
 | --- | --- |
-| **语音输入** | 在可编辑输入框中启动录音，将识别结果输入到目标位置；自动输入不可用时可检查剪贴板并手动粘贴 |
-| **翻译输入** | 口述后输出所选目标语言的文本，默认目标语言为 English |
-| **Notes 记事** | 用独立快捷键记录内容，在记事浮窗查看与管理 |
-| **实时语音聊天** | 与所选供应商进行语音对话，接收文字与语音回复；提供 3 个独立聊天页，可改标题、清空当前页 |
-| **日程与备忘** | 在实时对话中明确请求新增或读取本地日程、备忘，并在 Notes 中查看相关内容 |
-| **浮窗与个性设置** | 调整快捷键、显示记事/聊天浮窗、置顶及 Alt+Tab 显示方式；Gemini 聊天的联网搜索开关默认关闭 |
+| **Voice typing** | Dictate into an editable text field. If automatic insertion is unavailable, check the clipboard and paste manually |
+| **Translation input** | Speak and receive text in your selected target language. The default target is English |
+| **Notes** | Capture a voice note with its own shortcut, then view and manage it in the floating Notes window |
+| **Real-time voice chat** | Talk with your selected provider and receive text and spoken replies. Use 3 separate chat pages, rename their titles, or clear the current page |
+| **Schedules and memos** | Explicitly ask a live conversation to add or read local schedules and memos, then view the entries in Notes |
+| **Window and shortcut settings** | Customize shortcuts, show or hide Notes and chat windows, pin them, and control their appearance in Alt+Tab. Gemini chat also offers optional web search, disabled by default |
 
-设置页提供 **31 个明确的语言/地区选项及 System 选项**，翻译目标提供 31 个选项。它们是界面可选项，不代表所有语言在每个供应商上的识别表现相同。
+The language setting offers **31 named language/region choices plus System**. Translation has 31 target options. These are selectable settings, not a guarantee of identical recognition quality across languages or providers.
 
-当前普通语音输入和翻译输入的单次录音有 **3 分钟自动结束上限**。识别延迟和结果质量会受到麦克风、环境噪声、网络、供应商模型及账户额度影响。
+Voice typing and translation have a **3-minute maximum per recording**. Latency and accuracy depend on the microphone, background noise, network, provider model, and account limits.
 
-## 开始使用
+## Getting started
 
-### 1. 配置自己的 API Key
+### 1. Add your own API key
 
-打开应用设置，选择 **Gemini** 或 **OpenAI**，填写对应的 API Key 并保存。当前各功能使用设置中选择的供应商及其对应密钥。
+Open the app's settings, select **Gemini** or **OpenAI**, enter the corresponding API key, and save. The current features use the provider and key selected in these settings.
 
-| 供应商 | 官方设置指引 |
+| Provider | Official setup guide |
 | --- | --- |
-| Gemini | [获取与管理 Gemini API Key](https://ai.google.dev/gemini-api/docs/api-key) |
-| OpenAI | [获取与管理 OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-op) |
+| Gemini | [Create and manage a Gemini API key](https://ai.google.dev/gemini-api/docs/api-key) |
+| OpenAI | [Find and manage an OpenAI API key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-op) |
 
-使用前请确认密钥有权访问本版本所需的 API 和模型，并检查账户额度。**BYOK 不等于免费云服务**；软件无法代替供应商保证模型权限或持续可用性。
+Check that your account has access to the APIs and models used by this version and has sufficient quota. **BYOK does not mean free cloud processing.** The app cannot guarantee provider permissions, free credits, or continued model availability.
 
-### 2. 先完成一次语音输入
+### 2. Try your first dictation
 
-1. 在 Windows 中选好默认输入麦克风，并允许桌面应用访问麦克风。
-2. 打开记事本或其他普通可编辑输入框，把光标放到要输入的位置。
-3. **按一下右 Alt 开始录音**，说完后**再按一下右 Alt 停止并提交**，无需一直按住。
-4. 等待处理完成，检查文字；如没有自动输入，先查看剪贴板，再尝试 `Ctrl + V`。
+1. Select your default input microphone in Windows and allow desktop apps to access it.
+2. Open Notepad or another ordinary editable text field and place the cursor where you want the text.
+3. **Press Right Alt once to start recording. Press it again to stop and submit.** You do not need to hold the key.
+4. Wait for processing and review the result. If it was not inserted automatically, check the clipboard before trying `Ctrl + V`.
 
-录音过程中尽量保持目标输入框和焦点稳定。密码框、受保护控件或不同权限级别的程序，可能拒绝自动输入。
+Keep the target field and focus stable while recording. Password fields, protected controls, and applications running at a different privilege level may reject automatic insertion.
 
-### 3. 使用翻译、记事与聊天
+### 3. Try translation, Notes, and chat
 
-- **翻译**：先在设置中选择目标语言，再用翻译快捷键开始和结束录音。
-- **记事**：用 Notes 快捷键开始和结束录音，在记事浮窗查看结果。
-- **聊天**：用实时聊天快捷键开始会话，再次按下结束会话；在聊天窗口选择需要使用的页面。
+- **Translation:** choose a target language in settings, then use the translation shortcut to start and stop recording.
+- **Notes:** use the Notes shortcut to start and stop a voice note, then review it in the Notes window.
+- **Chat:** use the real-time chat shortcut to start a conversation and press it again to end it. Select the chat page you want to use in the chat window.
 
-## 默认快捷键
+## Default shortcuts
 
-| 按键 | 动作 |
+| Shortcut | Action |
 | --- | --- |
-| **右 Alt** | 开始 / 停止普通语音输入 |
-| **Scroll Lock** | 开始 / 停止翻译输入 |
-| **右 Alt + 空格** | 开始 / 停止 Notes 语音记事 |
-| **右 Alt + 右 Ctrl** | 开始 / 结束实时语音聊天 |
-| **Pause / Break** | 显示 / 隐藏浮窗 |
+| **Right Alt** | Start / stop voice typing |
+| **Scroll Lock** | Start / stop translation input |
+| **Right Alt + Space** | Start / stop a voice note |
+| **Right Alt + Right Ctrl** | Start / end a real-time voice conversation |
+| **Pause / Break** | Show / hide floating windows |
 
-这些按键均可在设置页调整。笔记本如果没有独立的 Scroll Lock 或 Pause / Break 键，可以选择其他组合；发生快捷键冲突时，也请先在设置中更换。
+All of these shortcuts can be changed in settings. If your keyboard lacks a dedicated Scroll Lock or Pause / Break key, choose another combination. Changing a shortcut can also resolve conflicts with other applications.
 
-## 隐私与本地数据
+## Privacy and local data
 
-完整说明见 [Windows 隐私说明](docs/PRIVACY.zh-CN.md)。
+For the full notice, see [Privacy for the Windows app](docs/PRIVACY.md).
 
-### 数据如何处理
+### How data is handled
 
-- **云端处理**：识别、翻译和实时对话所需的音频、文本及上下文会发送给所选 AI 供应商；密钥用于向该供应商鉴权。处理与保留规则以供应商政策为准。
-- **本地密钥**：保存的 API Key 使用 Windows DPAPI 的 `CurrentUser` 范围加密，绑定当前 Windows 用户。不要把配置文件当成可公开分享的普通文件。
-- **本地内容**：笔记、聊天历史、日程、备忘、日志和音频可能保留在电脑上。当你在实时对话中请求读取日程或备忘时，相关内容也会用于供应商会话。
-- **剪贴板**：识别结果可能写入 Windows 剪贴板，供自动输入或手动粘贴使用。
+- **Cloud processing:** audio, text, and conversation context needed for recognition, translation, or chat are sent to the selected AI provider. Your key authenticates those requests. The provider's policies govern its processing and retention.
+- **Local credentials:** saved API keys are encrypted with Windows DPAPI in the `CurrentUser` scope, tied to the current Windows user. Configuration files should still be treated as private.
+- **Local content:** notes, chat history, schedules, memos, logs, and audio may remain on your computer. When you ask a live conversation to read a schedule or memo, the relevant content is also used in that provider session.
+- **Clipboard:** recognized text may be placed on the Windows clipboard for automatic insertion or manual pasting.
 
-### 0.4.83 会保留什么
+### What version 0.4.83 retains
 
-**当前版本会自动保存处理后的输入录音，也可能留下临时录音；没有供用户关闭录音归档的界面开关，也没有录音的自动到期清理机制。** 请按自己的隐私需求管理这些文件，尤其是在共享电脑上使用时。
+**This version automatically saves processed input recordings and may leave temporary recordings. There is no user-facing switch to disable recording archival and no automatic expiry for archived recordings.** Manage these files according to your privacy needs, especially on a shared computer.
 
-| 数据 | 常见位置 |
+| Data | Common location |
 | --- | --- |
-| 设置与加密后的 API Key | `%APPDATA%\VoiceTypingAI\settings.ini` |
-| 记事、无日期备忘与部分窗口状态 | `%APPDATA%\VoiceTypingAI\widgets.json` |
-| 日程及兼容的旧备忘 | `%APPDATA%\VoiceTypingAI\schedules.json` |
-| 实时聊天历史 | `%APPDATA%\VoiceTypingAI\realtime-conversations.json` |
-| 调试日志与诊断内容 | `%APPDATA%\VoiceTypingAI\debug.log`、`debug.log.1`、`diagnostics\` |
-| 浮窗布局 | `%LOCALAPPDATA%\VoiceTypingAI\widget-layout.ini` |
-| 处理后录音 | `processed-audio\`，位置选择规则见下方 |
-| 最近一次录音副本 | `%TEMP%\voice-typing-ai-last-recording.wav` |
-| 其他临时录音 | `%TEMP%\voice-typing-ai-*.wav` |
+| Settings and encrypted API keys | `%APPDATA%\VoiceTypingAI\settings.ini` |
+| Notes, undated memos, and some window state | `%APPDATA%\VoiceTypingAI\widgets.json` |
+| Schedules and compatible legacy memos | `%APPDATA%\VoiceTypingAI\schedules.json` |
+| Real-time chat history | `%APPDATA%\VoiceTypingAI\realtime-conversations.json` |
+| Debug logs and diagnostic data | `%APPDATA%\VoiceTypingAI\debug.log`, `debug.log.1`, and `diagnostics\` |
+| Floating-window layout | `%LOCALAPPDATA%\VoiceTypingAI\widget-layout.ini` |
+| Processed input recordings | `processed-audio\`; see the location rules below |
+| Copy of the latest recording | `%TEMP%\voice-typing-ai-last-recording.wav` |
+| Other temporary recordings | `%TEMP%\voice-typing-ai-*.wav` |
 
-设置与历史文件还可能有 `.bak` 备份。`processed-audio` 优先使用环境变量 `VOICE_TYPING_AI_PROCESSED_AUDIO_DIR` 指定的目录；未指定时依次尝试检测到的项目目录、EXE 所在目录，以及 `%LOCALAPPDATA%\VoiceTypingAI\processed-audio`。日志位置也可以被 `VOICE_TYPING_AI_DEBUG_LOG_PATH` 覆盖。
+Settings and history files may also have `.bak` backups. Processed audio first uses the directory specified by `VOICE_TYPING_AI_PROCESSED_AUDIO_DIR`. Otherwise, the app tries a detected project folder, the EXE's folder, and then `%LOCALAPPDATA%\VoiceTypingAI\processed-audio`. The log location can also be overridden with `VOICE_TYPING_AI_DEBUG_LOG_PATH`.
 
-清理前先退出应用，并保留自己仍需要的笔记或日程。清空聊天页面、删除 EXE 或下载新的发行包，不应被视为已清除上述全部数据。历史版本用户还可以检查旧的 `generated-audio` 语音回复归档目录。
+Exit the app before cleaning up its data, and preserve any notes or schedules you still need. Clearing a chat page, deleting the EXE, or downloading a new release does not imply that all of these files have been removed. Users upgrading from older versions may also want to check the legacy `generated-audio` folder for archived spoken replies.
 
-**本次源码公开前已移除开发时的真实录音、转写原文、日志与实验输出。** 这项清理没有改变应用的自动归档行为；从源码运行后仍可能重新生成敏感文件。提交代码、上传问题附件或分享整个文件夹前，请再次检查。
+**Development recordings, transcript text, logs, and experiment outputs were removed before this source publication.** That cleanup did not change the app's archival behavior. Running the app from source can create sensitive files again. Review newly generated files before committing code, attaching diagnostics to an issue, or sharing a project folder.
 
-## 常见问题
+## Troubleshooting
 
-| 现象 | 建议检查 |
+| Symptom | What to check |
 | --- | --- |
-| 提示密钥无效、无权限或额度不足 | 供应商选择是否正确、密钥是否完整、账户权限与额度是否满足本版本配置的模型 |
-| 正在录音但没有声音 | Windows 默认输入设备、麦克风权限、静音状态和输入音量；可先用 Windows 录音工具确认设备 |
-| 有识别结果，但没有出现在目标输入框 | 光标是否仍在原输入框、目标是否可编辑；查看剪贴板后手动粘贴，并检查目标程序的权限级别 |
-| 快捷键没反应 | 是否使用了默认的**右侧** Alt / Ctrl、按键是否被其他软件占用；尝试在设置中换一组快捷键 |
-| 停止后等待很久或请求失败 | 网络连通性、供应商状态、配额与模型权限；先用短语音确认链路，不要把重试视为一定不会产生额外 API 用量 |
-| 找不到记事或聊天浮窗 | 检查设置中的显示开关，或使用 Pause / Break / 自定义浮窗快捷键 |
-| 换电脑后密钥不能直接使用 | 密钥保护绑定 Windows 用户；在新环境重新打开设置并填写自己的密钥 |
-| 下载后无法启动 | 确认是 Windows x64、文件完整，并检查 .NET Framework 运行环境；仅从本仓库 Release 获取文件 |
+| Invalid key, access denied, or insufficient quota | Confirm the selected provider, the complete key, account permissions, and quota for this version's configured models |
+| Recording starts but no sound is captured | Check the Windows default input device, microphone permissions, mute state, and input level. Test the device with a Windows recording app first |
+| Text is recognized but not inserted | Keep focus in the original editable field. Check the clipboard and paste manually if needed; also check the target app's privilege level |
+| A shortcut does nothing | Check that you are using the **right-hand** Alt / Ctrl keys where required, look for conflicts, or assign another shortcut |
+| Processing is slow or a request fails | Check connectivity, provider status, quota, and model permissions. Try a short recording first; retries may create additional API usage |
+| The Notes or chat window is missing | Check its display setting, or use Pause / Break or your custom window shortcut |
+| A saved key does not work after moving to another computer | Key protection is tied to the Windows user. Open settings in the new environment and enter your own key again |
+| The downloaded app will not start | Confirm Windows x64, verify the file, and check the .NET Framework runtime. Download only from this repository's Releases |
 
-如果需要反馈问题，请在 [Issues](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/issues) 中说明版本、Windows 环境、所选供应商和复现步骤。**不要提交 API Key、完整用户配置、真实录音或未经检查的聊天/调试日志。**
+To report a problem, open an [issue](https://github.com/silkykorea-blip/VoiceTypingAI-Windows/issues) with the app version, Windows environment, selected provider, and reproduction steps. **Do not attach API keys, complete user configurations, personal recordings, or unreviewed conversation/debug logs.**
 
-## 从源码构建
+## Build from source
 
-本仓库包含 **Windows 版本的 C# / WinForms 源码**。当前构建直接调用 Windows .NET Framework 的编译器及系统程序集，不依赖 Node.js、Python 或在线 NuGet 还原。
+This repository contains the **C# / WinForms source for the Windows app**. The current build calls the Windows .NET Framework compiler and system assemblies directly. It does not require Node.js, Python, or an online NuGet restore.
 
-在项目根目录打开 PowerShell：
+Open PowerShell in the project root:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
-| 输出 | 用途 |
+| Output | Purpose |
 | --- | --- |
-| `bin\VoiceTypingAI.exe` | Windows x64 应用 |
-| `dist\VoiceTypingAISetup.exe` | 安装程序 |
+| `bin\VoiceTypingAI.exe` | Windows x64 application |
+| `dist\VoiceTypingAISetup.exe` | Installer |
 
-构建脚本使用标准 Windows 安装路径下的 `Framework64\v4.0.30319\csc.exe`，并引用 WPF 的 UI Automation 程序集。这里的 `v4.0.30319` 是工具目录名称，不应据此推断已验证所有旧版 Windows 或所有 .NET Framework 4.x 环境。
+The build script uses `Framework64\v4.0.30319\csc.exe` under the standard Windows installation path and references the WPF UI Automation assemblies. The `v4.0.30319` folder name identifies the tool location; it is not a claim that every older Windows release or .NET Framework 4.x environment has been validated.
 
 <details>
-<summary>源码入口</summary>
+<summary>Source map</summary>
 
-| 文件 / 目录 | 内容 |
+| File / folder | Contents |
 | --- | --- |
-| [`Program.cs`](Program.cs) | 主界面、语音输入、设置、音频流程与自动输入 |
-| [`RealtimeConversation.cs`](RealtimeConversation.cs) | 独立聊天页面与会话存储 |
-| [`WakeAndConversation.cs`](WakeAndConversation.cs) | 语音会话与供应商通信；文件名包含历史命名 |
-| [`FeatureLocalization.cs`](FeatureLocalization.cs) | 功能界面本地化 |
-| [`installer/`](installer/) | 安装器与安装相关文件 |
-| [`tests/`](tests/) | 离线回归与供应商测试工具 |
-| [`build.ps1`](build.ps1) | 应用及安装程序的构建入口 |
+| [Program.cs](Program.cs) | Main UI, voice input, settings, audio processing, and automatic text insertion |
+| [RealtimeConversation.cs](RealtimeConversation.cs) | Separate chat pages and conversation storage |
+| [WakeAndConversation.cs](WakeAndConversation.cs) | Voice sessions and provider communication; the filename retains historical naming |
+| [FeatureLocalization.cs](FeatureLocalization.cs) | Feature UI localization |
+| [installer/](installer/) | Installer and installation files |
+| [tests/](tests/) | Offline regression tests and provider test tools |
+| [build.ps1](build.ps1) | Application and installer build entry point |
 
 </details>
 
-## 测试与验证范围
+## Tests and validation limits
 
-运行离线回归：
+Run the offline regression suite:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\build-and-run-tests.ps1
 ```
 
-本次公开前的本地检查结果为：**构建通过，离线回归 132 / 132 通过。** 测试脚本随后会编译 `ProviderSmokeTests.exe`，但不会自动执行真实供应商调用。
+The local checks before this source publication completed with a **successful build and 132 / 132 offline tests passing**. The script then compiles `ProviderSmokeTests.exe`, but does not automatically run live provider requests.
 
-离线测试用于检查本地逻辑，不能代替所有真实麦克风、蓝牙设备、目标输入框、管理员权限场景和供应商 API 的实测。本次检查也不保证云端模型今后的可用性。若自行运行供应商测试工具，需要准备自己的密钥和非敏感测试音频；该工具会向 Gemini 和 OpenAI 发送音频，并可能产生费用。开发时的真人测试录音不随仓库分发。
+Offline tests check local logic. They do not replace testing every microphone, Bluetooth device, target text field, elevated application, or live provider API. They also do not guarantee future cloud-model availability. Running the provider test tool yourself requires your own keys and non-sensitive test audio; it sends audio to both Gemini and OpenAI and may incur charges. Personal development recordings are not distributed with the repository.
 
-## Android 版本
+## Android app
 
 <a href="https://play.google.com/store/apps/details?id=com.silkytypingai.app">
-  <img src="assets/android-card.svg" alt="Voice Typing AI - Talk to Text — 在 Google Play 查看独立 Android 版本" width="100%">
+  <img src="assets/android-card.svg" alt="Voice Typing AI - Talk to Text — view the separate Android app on Google Play" width="100%">
 </a>
 
-手机上也可以使用独立的 **Voice Typing AI - Talk to Text**：
+For your phone, see the separate **Voice Typing AI - Talk to Text** app:
 
-**[在 Google Play 查看 Android 版 →](https://play.google.com/store/apps/details?id=com.silkytypingai.app)**
+**[View the Android app on Google Play →](https://play.google.com/store/apps/details?id=com.silkytypingai.app)**
 
-本仓库仅包含 Windows 版本源码。Android 版的功能、账号方式和使用条件以 Google Play 当前介绍为准；Windows 版的 BYOK 设置与功能说明不作为 Android 版的承诺。
+This repository contains only the Windows source. The Android app has its own features, account requirements, and terms, as described in its current Google Play listing. The Windows BYOK setup and feature descriptions do not define the Android app's behavior.
 
-## English overview
+## Author and licensing
 
-Voice Typing AI for Windows provides voice typing, translation input, notes, and real-time voice conversations through global shortcuts. It targets Windows x64 and uses your own Gemini or OpenAI API key. Cloud processing requires an internet connection and may incur provider charges.
+Developer: **SILKYKOREA**  
+Contact: [cuizhe699@gmail.com](mailto:cuizhe699@gmail.com)
 
-Version **0.4.83** is available as an installer or a portable executable. The portable build still stores user data in Windows application-data folders. This version automatically retains processed input audio and may leave temporary recordings, logs, and conversation history; review the privacy section before use.
-
-The repository contains the Windows source only. The Android application is a separate product linked above. No open-source license has been selected for this repository.
-
-## 作者与授权
-
-开发者：**SILKYKOREA**  
-联系邮箱：[cuizhe699@gmail.com](mailto:cuizhe699@gmail.com)
-
-当前暂未选择开源许可证。源码公开不等于授予任意使用、修改或再分发的许可；如需相应授权，请联系开发者。
+No open-source license has been selected for this repository. Making the source public does not grant unrestricted permission to use, modify, or redistribute it. Contact the developer if you need permission for those uses.
