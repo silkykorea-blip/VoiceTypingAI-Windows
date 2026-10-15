@@ -5,7 +5,7 @@
 <h1 align="center">Voice Typing AI for Windows</h1>
 
 <p align="center"><strong>Press a shortcut, speak your thoughts, and put them into the text field.</strong></p>
-<p align="center">Windows x64 · 0.4.83 · Gemini / OpenAI · Bring Your Own API Key</p>
+<p align="center">Windows x64 · 0.4.83 · Gemini / OpenAI · Bring Your Own API Key · <a href="LICENSE">MIT License</a></p>
 
 <p align="center">
   <a href="https://github.com/silkykorea-blip/VoiceTypingAI-Windows/releases/tag/v0.4.83"><strong>Download for Windows</strong></a>
@@ -17,7 +17,7 @@
 
 ---
 
-Voice Typing AI is a Windows desktop tool for dictation, translation, voice notes, and real-time conversations with spoken replies. Global shortcuts let you start speaking while working in another application.
+Voice Typing AI is an open-source Windows desktop tool for dictation, translation, voice notes, and real-time conversations with spoken replies. Global shortcuts let you start speaking while working in another application.
 
 **The Windows app uses BYOK (Bring Your Own Key): you must supply your own Gemini or OpenAI API key.** The repository and release packages do not include the developer's credentials or cloud credits. Speech recognition and conversations require an internet connection. Pricing, quotas, model access, and service availability depend on your chosen provider.
 
@@ -213,4 +213,6 @@ This repository contains only the Windows source. The Android app has its own fe
 Developer: **SILKYKOREA**  
 Contact: [cuizhe699@gmail.com](mailto:cuizhe699@gmail.com)
 
-No open-source license has been selected for this repository. Making the source public does not grant unrestricted permission to use, modify, or redistribute it. Contact the developer if you need permission for those uses.
+This Windows project is open source under the **[MIT License](LICENSE)**. You may use, modify, redistribute, and sell copies, including in closed-source commercial products, provided you retain the copyright and license notice. The software is provided without warranty; see the license for the full terms.
+
+This license covers this Windows repository and the Windows 0.4.83 binaries distributed in its GitHub Release. The separately linked Android app is not included in this license grant. Gemini and OpenAI services remain subject to their own terms, and you must supply your own API key.
